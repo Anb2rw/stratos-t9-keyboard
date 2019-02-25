@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="#000000"
+              android:orientation="vertical">
+
+    <FrameLayout
+            android:id="@+id/textPreviewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        <RelativeLayout
+                android:layout_width="102dp"
+                android:layout_height="match_parent"
+                android:paddingRight="8dp"
+                android:layout_gravity="center_horizontal">
+
+            <TextView
+                    android:id="@+id/text"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:gravity="center_vertical|right"
+                    android:ellipsize="start"
+                    android:singleLine="true"
+                    android:paddingRight="1dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/textEnd"
+                    android:textSize="14dp"/>
+
+            <View android:layout_width="1px"
+                  android:layout_height="18dp"
+                  android:clickable="false"
+                  android:layout_centerVertical="true"
+                  android:background="@android:color/white"
+                  android:layout_toLeftOf="@+id/textEnd"
+                  android:layout_alignWithParentIfMissing="true"/>
+
+            <TextView
+                    android:id="@+id/textEnd"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:clickable="false"
+                    android:singleLine="true"
+                    android:maxWidth="30dp"
+                    android:gravity="center_vertical"
+                    android:layout_alignParentRight="true"
+                    android:textSize="14dp"/>
+        </RelativeLayout>
+
+    </FrameLayout>
+
+    <com.anb2rw.keyboardt9.T9KeyboardView
+            android:id="@+id/keyboard_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:keyBackground="@drawable/key_selector"
+            android:keyTextSize="20sp"
+            android:layout_alignParentBottom="true">
+
+    </com.anb2rw.keyboardt9.T9KeyboardView>
+
+</LinearLayout>

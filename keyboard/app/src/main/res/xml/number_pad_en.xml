@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+          android:keyWidth="71dp"
+          android:horizontalGap="0dp"
+          android:verticalGap="0dp"
+          android:keyHeight="43dp">
+
+    <Row android:rowEdgeFlags="top">
+        <Key android:codes="46,44,63,33,49,45,95" android:keyLabel="1" android:keyEdgeFlags="left" />
+        <Key android:codes="97,98,99,50" android:keyLabel="2" />
+        <Key android:codes="100,101,102,51" android:keyLabel="3" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="103,104,105,52" android:keyLabel="4" android:keyEdgeFlags="left"/>
+        <Key android:codes="106,107,108,53" android:keyLabel="5"/>
+        <Key android:codes="109,110,111,54" android:keyLabel="6" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="112,113,114,115,55" android:keyLabel="7" android:keyEdgeFlags="left"/>
+        <Key android:codes="116,117,118,56" android:keyLabel="8"/>
+        <Key android:codes="119,120,121,122,57" android:keyLabel="9" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-5"
+             android:keyIcon="@drawable/ic_backspace"
+             android:keyEdgeFlags="left"
+             android:isRepeatable="true"/>
+        <Key android:codes="32,43,48" android:keyLabel="0" />
+        <Key android:codes="-1"
+             android:keyIcon="@drawable/ic_shift"
+             android:keyEdgeFlags="right"/>
+    </Row>
+
+</Keyboard>
